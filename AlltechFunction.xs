@@ -19,16 +19,16 @@ if(p>8&&p<=16){
 s=1;
 p=p-8;
 }
-//prevent remove houses not working
+//prevent remove houses
 xsEffectAmount(102,289,0,0,p);
-//xsEffectAmount(cModifyTech,289,cAttrSetFoodCost,10000,p);
-//xsEffectAmount(cModifyTech,289,cAttrSetWoodCost,10000,p);
-//xsEffectAmount(cModifyTech,289,cAttrSetStoneCost,10000,p);
-//xsEffectAmount(cModifyTech,289,cAttrSetGoldCost,10000,p);
-//xsEffectAmount(cModifyTech,289,cAttrSetTime,10000,p);
-//xsEffectAmount(cModifyTech,289,cAttrSetLocation,109,p);
-//xsEffectAmount(cModifyTech,289,cAttrSetButton,6,p);
-//xsEffectAmount(cModifyTech,289,cAttrSetIcon,101,p);
+xsEffectAmount(cModifyTech,289,cAttrSetFoodCost,10000,p);
+xsEffectAmount(cModifyTech,289,cAttrSetWoodCost,10000,p);
+xsEffectAmount(cModifyTech,289,cAttrSetStoneCost,10000,p);
+xsEffectAmount(cModifyTech,289,cAttrSetGoldCost,10000,p);
+xsEffectAmount(cModifyTech,289,cAttrSetTime,10000,p);
+xsEffectAmount(cModifyTech,289,cAttrSetLocation,109,p);
+xsEffectAmount(cModifyTech,289,cAttrSetButton,6,p);
+xsEffectAmount(cModifyTech,289,cAttrSetIcon,101,p);
 xsEffectAmount(cSetAttribute,1792,cNameId,5450,p);
 xsEffectAmount(cMulAttribute,707,cMovementSpeed,4.0/3.0,p);
 xsEffectAmount(cMulAttribute,777,cMovementSpeed,1.55/1.2,p);
