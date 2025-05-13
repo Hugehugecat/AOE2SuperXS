@@ -6,6 +6,7 @@ if(p>8&&p<=16){
 s=1;
 p=p-8;
 }
+//smashable rocks
 xsEffectAmount(cGaiaSetAttribute,857,cBlastDefenseLevel,2,0);
 xsEffectAmount(cGaiaSetAttribute,389,cBlastDefenseLevel,2,0);
 xsEffectAmount(cGaiaSetAttribute,396,cBlastDefenseLevel,2,0);
@@ -2566,6 +2567,11 @@ xsResearchTechnology(525,true,false,p);
 xsResearchTechnology(691,true,false,p);
 //tower shields
 xsResearchTechnology(692,true,false,p);
+xsEffectAmount(cAddAttribute,879,cArmor,3*256+2,p);
+xsEffectAmount(cAddAttribute,881,cArmor,3*256+2,p);
+xsEffectAmount(cAddAttribute,892,cArmor,3*256+2,p);
+xsEffectAmount(cAddAttribute,1901,cArmor,3*256+2,p);
+xsEffectAmount(cAddAttribute,1903,cArmor,3*256+2,p);
 //civ bonus
 xsResearchTechnology(697,true,false,p);//each town center provides +100 food
 xsResearchTechnology(710,true,false,p);//spearman line and skirmishers move 10% faster
@@ -2587,6 +2593,11 @@ if(xsGetPlayerCivilization(p)==35){
 xsResearchTechnology(691,true,false,p);
 //tower shields
 xsResearchTechnology(692,true,false,p);
+xsEffectAmount(cAddAttribute,879,cArmor,3*256+2,p);
+xsEffectAmount(cAddAttribute,881,cArmor,3*256+2,p);
+xsEffectAmount(cAddAttribute,892,cArmor,3*256+2,p);
+xsEffectAmount(cAddAttribute,1901,cArmor,3*256+2,p);
+xsEffectAmount(cAddAttribute,1903,cArmor,3*256+2,p);
 //civ bonus
 xsResearchTechnology(697,true,false,p);
 xsResearchTechnology(710,true,false,p);
@@ -2617,6 +2628,7 @@ xsEffectAmount(cAddAttribute,1925,cAttack,3*256+17,p);
 xsEffectAmount(cAddAttribute,1925,cAttack,11*256+4,p);
 xsEffectAmount(cAddAttribute,1925,cAttack,17*256+2,p);
 xsEffectAmount(cAddAttribute,1925,cAttack,27*256+4,p);
+xsEffectAmount(cSetAttribute,1925,cShownAttack,16,p);
 xsEffectAmount(cMulAttribute,5,cAttack,1*256+80,p);
 xsEffectAmount(cMulAttribute,5,cAttack,3*256+80,p);
 xsEffectAmount(cMulAttribute,5,cAttack,11*256+80,p);
@@ -2943,6 +2955,42 @@ xsResearchTechnology(785,true,false,p);
 xsResearchTechnology(808,true,false,p);//blacksmiths and universities cost -100 wood
 //chemistry and hand cannoneer available in castle age no need
 xsResearchTechnology(802,true,false,p);//spearman-line deals +25% bonus damage
+xsEffectAmount(cMulAttribute,879,cAttack,5*256+125,p);
+xsEffectAmount(cMulAttribute,879,cAttack,8*256+125,p);
+xsEffectAmount(cMulAttribute,879,cAttack,15*256+125,p);
+xsEffectAmount(cMulAttribute,879,cAttack,21*256+125,p);
+xsEffectAmount(cMulAttribute,879,cAttack,30*256+125,p);
+xsEffectAmount(cMulAttribute,881,cAttack,5*256+125,p);
+xsEffectAmount(cMulAttribute,881,cAttack,8*256+125,p);
+xsEffectAmount(cMulAttribute,881,cAttack,15*256+125,p);
+xsEffectAmount(cMulAttribute,881,cAttack,21*256+125,p);
+xsEffectAmount(cMulAttribute,881,cAttack,30*256+125,p);
+xsEffectAmount(cMulAttribute,881,cAttack,35*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,5*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,8*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,15*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,16*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,21*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,29*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,30*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,34*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,35*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,5*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,8*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,15*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,16*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,21*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,23*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,30*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,34*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,5*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,8*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,15*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,16*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,21*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,23*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,30*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,34*256+125,p);
 xsResearchTechnology(803,true,false,p);//fervor and sanctity affect villagers
 xsResearchTechnology(804,true,false,p);
 //mining camp technologies are free no need
@@ -2967,6 +3015,78 @@ xsResearchTechnology(785,true,false,p);
 xsResearchTechnology(808,true,false,p);
 //chemistry and hand cannoneer available in castle age no need
 xsResearchTechnology(802,true,false,p);
+xsEffectAmount(cMulAttribute,879,cAttack,5*256+125,p);
+xsEffectAmount(cMulAttribute,879,cAttack,8*256+125,p);
+xsEffectAmount(cMulAttribute,879,cAttack,15*256+125,p);
+xsEffectAmount(cMulAttribute,879,cAttack,21*256+125,p);
+xsEffectAmount(cMulAttribute,879,cAttack,30*256+125,p);
+xsEffectAmount(cMulAttribute,881,cAttack,5*256+125,p);
+xsEffectAmount(cMulAttribute,881,cAttack,8*256+125,p);
+xsEffectAmount(cMulAttribute,881,cAttack,15*256+125,p);
+xsEffectAmount(cMulAttribute,881,cAttack,21*256+125,p);
+xsEffectAmount(cMulAttribute,881,cAttack,30*256+125,p);
+xsEffectAmount(cMulAttribute,881,cAttack,35*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,5*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,8*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,15*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,16*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,21*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,29*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,30*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,34*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,35*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,5*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,8*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,15*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,16*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,21*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,23*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,30*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,34*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,5*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,8*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,15*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,16*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,21*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,23*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,30*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,34*256+125,p);
+xsEffectAmount(cMulAttribute,879,cAttack,5*256+125,p);
+xsEffectAmount(cMulAttribute,879,cAttack,8*256+125,p);
+xsEffectAmount(cMulAttribute,879,cAttack,15*256+125,p);
+xsEffectAmount(cMulAttribute,879,cAttack,21*256+125,p);
+xsEffectAmount(cMulAttribute,879,cAttack,30*256+125,p);
+xsEffectAmount(cMulAttribute,881,cAttack,5*256+125,p);
+xsEffectAmount(cMulAttribute,881,cAttack,8*256+125,p);
+xsEffectAmount(cMulAttribute,881,cAttack,15*256+125,p);
+xsEffectAmount(cMulAttribute,881,cAttack,21*256+125,p);
+xsEffectAmount(cMulAttribute,881,cAttack,30*256+125,p);
+xsEffectAmount(cMulAttribute,881,cAttack,35*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,5*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,8*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,15*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,16*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,21*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,29*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,30*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,34*256+125,p);
+xsEffectAmount(cMulAttribute,892,cAttack,35*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,5*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,8*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,15*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,16*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,21*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,23*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,30*256+125,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,34*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,5*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,8*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,15*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,16*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,21*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,23*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,30*256+125,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,34*256+125,p);
 xsResearchTechnology(803,true,false,p);
 xsResearchTechnology(804,true,false,p);
 //mining camp technologies are free no need
@@ -4258,6 +4378,10 @@ xsEffectAmount(cSetAttribute,367,cAttack,3*256+62,p);
 xsEffectAmount(cSetAttribute,378,cAttack,3*256+62,p);
 xsEffectAmount(cSetAttribute,627,cAttack,3*256+78,p);
 xsEffectAmount(cSetAttribute,628,cAttack,3*256+78,p);
+xsEffectAmount(cSetAttribute,367,cShownAttack,16,p);
+xsEffectAmount(cSetAttribute,378,cShownAttack,16,p);
+xsEffectAmount(cSetAttribute,627,cShownAttack,22,p);
+xsEffectAmount(cSetAttribute,628,cShownAttack,22,p);
 xsEffectAmount(cSetAttribute,367,cAttack,5*256+9,p);
 xsEffectAmount(cSetAttribute,378,cAttack,5*256+9,p);
 xsEffectAmount(cSetAttribute,627,cAttack,5*256+13,p);
@@ -4285,6 +4409,7 @@ xsEffectAmount(cMulAttribute,767,cAttack,11*256+125,p);
 xsEffectAmount(cMulAttribute,767,cAttack,22*256+125,p);
 xsEffectAmount(cMulAttribute,767,cAttack,26*256+125,p);
 xsEffectAmount(cSetAttribute,767,cBlastWidth,1.15,p);
+xsEffectAmount(cSetAttribute,767,cShownAttack,45,p);
 //infantry adjust
 xsEffectAmount(cMulAttribute,906,cArmor,4*256+200,p);
 xsEffectAmount(cMulAttribute,906,cArmor,3*256+200,p);
@@ -4306,9 +4431,62 @@ xsEffectAmount(cMulAttribute,93,cArmor,4*256+50,p);
 xsEffectAmount(cMulAttribute,358,cArmor,4*256+50,p);
 xsEffectAmount(cMulAttribute,359,cArmor,4*256+50,p);
 xsEffectAmount(cMulAttribute,1793,cArmor,4*256+50,p);
-//fire lancer range
+//kamayuk bonus attack
+xsEffectAmount(cMulAttribute,879,cAttack,5*256+200,p);
+xsEffectAmount(cMulAttribute,879,cAttack,5*256+200,p);
+xsEffectAmount(cMulAttribute,879,cAttack,8*256+200,p);
+xsEffectAmount(cMulAttribute,879,cAttack,8*256+200,p);
+xsEffectAmount(cMulAttribute,879,cAttack,15*256+200,p);
+xsEffectAmount(cMulAttribute,879,cAttack,15*256+200,p);
+xsEffectAmount(cMulAttribute,879,cAttack,21*256+200,p);
+xsEffectAmount(cMulAttribute,879,cAttack,21*256+200,p);
+xsEffectAmount(cMulAttribute,879,cAttack,30*256+200,p);
+xsEffectAmount(cMulAttribute,879,cAttack,30*256+200,p);
+xsEffectAmount(cMulAttribute,881,cAttack,5*256+200,p);
+xsEffectAmount(cMulAttribute,881,cAttack,5*256+200,p);
+xsEffectAmount(cMulAttribute,881,cAttack,8*256+200,p);
+xsEffectAmount(cMulAttribute,881,cAttack,8*256+200,p);
+xsEffectAmount(cMulAttribute,881,cAttack,15*256+200,p);
+xsEffectAmount(cMulAttribute,881,cAttack,15*256+200,p);
+xsEffectAmount(cMulAttribute,881,cAttack,21*256+200,p);
+xsEffectAmount(cMulAttribute,881,cAttack,21*256+200,p);
+xsEffectAmount(cMulAttribute,881,cAttack,30*256+200,p);
+xsEffectAmount(cMulAttribute,881,cAttack,30*256+200,p);
+xsEffectAmount(cMulAttribute,881,cAttack,35*256+200,p);
+xsEffectAmount(cMulAttribute,881,cAttack,35*256+200,p);
+//fire lancer range and bonus attack
 xsEffectAmount(cSetAttribute,1901,cRechargeRate,1.0/10.0,p);
 xsEffectAmount(cSetAttribute,1903,cRechargeRate,1.0/10.0,p);
+xsEffectAmount(cAddAttribute,1901,cLineOfSight,xsGetObjectAttribute(p,1901,cLineOfSight),p);
+xsEffectAmount(cAddAttribute,1901,cChargeEvent,xsGetObjectAttribute(p,1901,cChargeEvent),p);
+xsEffectAmount(cAddAttribute,1901,cSearchRadius,xsGetObjectAttribute(p,1901,cSearchRadius),p);
+xsEffectAmount(cAddAttribute,1903,cLineOfSight,xsGetObjectAttribute(p,1903,cLineOfSight),p);
+xsEffectAmount(cAddAttribute,1903,cChargeEvent,xsGetObjectAttribute(p,1903,cChargeEvent),p);
+xsEffectAmount(cAddAttribute,1903,cSearchRadius,xsGetObjectAttribute(p,1903,cSearchRadius),p);
+xsEffectAmount(cMulAttribute,1901,cAttack,21*256+150,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,16*256+200,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,34*256+200,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,5*256+200,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,5*256+150,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,8*256+200,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,8*256+150,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,30*256+200,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,30*256+150,p);
+xsEffectAmount(cMulAttribute,1901,cAttack,15*256+150,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,21*256+150,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,16*256+200,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,34*256+200,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,5*256+200,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,5*256+150,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,8*256+200,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,8*256+150,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,30*256+200,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,30*256+150,p);
+xsEffectAmount(cMulAttribute,1903,cAttack,15*256+150,p);
+
+
+
+
 //archer adjust
 //obsidian arrows
 xsEffectAmount(cAddAttribute,900,cAttack,11*256+6,p);
